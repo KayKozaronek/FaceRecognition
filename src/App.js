@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import  Clarifai from "clarifai";
+import Clarifai from "clarifai";
 import Particles from "react-particles-js";
 import Navigation from "./components/Navigation/Navigation";
 import Logo from "./components/Logo/Logo";
@@ -103,7 +103,7 @@ class App extends Component {
             onInputChange={this.onInputChange} 
             onButtonSubmit={this.onButtonSubmit}
           />
-          <FaceRecognition box={box}imageUrl = {imageUrl}/>
+          <FaceRecognition box = {box} imageUrl = {imageUrl}/>
           </div>
         : (
           route ==="signin" 
