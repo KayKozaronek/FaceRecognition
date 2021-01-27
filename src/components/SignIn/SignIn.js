@@ -1,7 +1,7 @@
 import React from "react";
 //import "./SignIn.css"
 
-class SignIn extends React.Component {
+class Signin extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -20,7 +20,7 @@ class SignIn extends React.Component {
 
     onSubmitSignIn = (event) => {
         //event.preventDefault();
-        fetch("http://localhost:3000/signin", {
+        fetch("https://safe-sierra-65300.herokuapp.com/signin", {
             method: "post",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({
@@ -84,4 +84,4 @@ class SignIn extends React.Component {
     }
 }
 
-export default SignIn;
+export default Signin;
